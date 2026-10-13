@@ -6,7 +6,7 @@ from __future__ import annotations
 
 import argparse
 import base64
-import html
+from html import escape
 import json
 import os
 from pathlib import Path
@@ -76,7 +76,7 @@ def build(root: Path, output: Path | None, revision: str | None,
         ast["blocks"].pop(0)
     if config.get("recipient_lines"):
         recipient = '<div class="recipient">' + ''.join(
-            '<p>' + html.escape(line) + '</p>' for line in config["recipient_lines"]) + '</div>'
+            '<p>' + escape(line) + '</p>' for line in config["recipient_lines"]) + '</div>'
         ast["blocks"].insert(0, {"t": "RawBlock", "c": ["html", recipient]})
     stylesheet = (root / config.get("css", "docs/media/print.css")).resolve()
     stylesheet.relative_to(root)
