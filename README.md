@@ -356,3 +356,7 @@ Licensed under Apache-2.0.
 ## Author
 
 Tom Sapletta
+
+## Pactown dla uczelni
+
+[Prezentacja dla Collegium Medicum UKSW](docs/information/pactown-uksw-pl.md) · [jeden zbiorczy PDF](reports/pactown-collegium-medicum-uksw.pdf). Autorzy projektu: Tomasz Sapletta i Bartłomiej Michalak.

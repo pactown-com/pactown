@@ -1,0 +1,29 @@
+/* Presentation layout for the university audience. */
+@page { size: A4; margin: 18mm 17mm 19mm; @bottom-right { content: "Pactown · " counter(page); font: 8.5pt "Liberation Sans", sans-serif; color: #4e6677; } }
+@page:first { @bottom-right { content: none; } }
+body { margin: 0; font: 11.5pt/1.46 "Liberation Sans", "DejaVu Sans", sans-serif; color: #172f41; }
+header#title-block-header { border-top: 4mm solid #0785b8; padding-top: 32mm; }
+header .title { font-size: 34pt; line-height: 1.13; letter-spacing: -.5px; margin-bottom: 8mm; }
+header .subtitle { font-size: 17pt; color: #315d76; margin-bottom: 13mm; }
+header .author { font-size: 13pt; font-weight: 700; }
+header .date { font-size: 10pt; color: #4e6677; margin-top: 8mm; }
+.recipient { margin: 19mm 0 0; border-left: 1mm solid #0785b8; padding: 2mm 5mm; break-after: page; }
+.recipient p { margin: 1.2mm 0; font-size: 11pt; }
+.recipient p:first-child { font-weight: 700; margin-bottom: 8mm; }
+h2 { break-before: page; font-size: 23pt; line-height: 1.2; border-top: .7mm solid #0785b8; padding-top: 5mm; margin: 0 0 7mm; }
+h3 { font-size: 14pt; color: #00668b; margin: 6mm 0 2mm; }
+h1, h2, h3 { break-after: avoid; }
+p, li { orphans: 3; widows: 3; }
+a { color: #00668b; text-decoration: none; }
+strong { color: #102a3f; }
+table { width: 100%; border-collapse: collapse; font-size: 10pt; margin: 4mm 0 5mm; break-inside: avoid; }
+th { background: #e8f4fa; font-weight: 700; }
+th, td { padding: 2mm; border-bottom: .2mm solid #b5d1df; text-align: left; vertical-align: top; }
+tr { break-inside: avoid; }
+figure { margin: 4mm 0 6mm; text-align: center; break-inside: avoid; }
+figure img { max-width: 100%; max-height: 94mm; object-fit: contain; }
+figcaption { text-align: left; font-size: 9pt; color: #4e6677; margin-top: 2mm; }
+blockquote { background: #eaf5fb; border-left: 1mm solid #0785b8; margin: 5mm 0; padding: 3mm 5mm; font-size: 13pt; }
+blockquote p { margin: 0; }
+code { font-family: "Liberation Mono", monospace; font-size: 9pt; }
+p, td, li { overflow-wrap: anywhere; }

@@ -1,0 +1,49 @@
+{
+  "schema": "pactown/presentation-evidence/v1",
+  "project": "Pactown",
+  "authors": [
+    "Tomasz Sapletta",
+    "Bartłomiej Michalak"
+  ],
+  "authorSource": "Explicit project-owner instruction in this task.",
+  "audience": "Wydział Medyczny. Collegium Medicum UKSW",
+  "recipientAddress": "ul. Wóycickiego 1/3, 01-938 Warszawa",
+  "recipientSource": "https://wmcm.uksw.edu.pl/kandydaci/kontakt/",
+  "authority": "none",
+  "claims": {
+    "universityDeploymentVerified": false,
+    "educationalOutcomesMeasured": false,
+    "savingsMeasured": false,
+    "clinicalUseValidated": false,
+    "desktopAndMobileBuildsTested": false,
+    "pilotPlan": "proposal"
+  },
+  "existingTechnicalVerification": {
+    "library": {
+      "passed": 115,
+      "skipped": 2,
+      "liveLocalServices": 2,
+      "date": "2026-10-13"
+    },
+    "platform": {
+      "backendPassed": 67,
+      "frontendPassed": 28,
+      "date": "2026-10-13"
+    }
+  },
+  "screenshot": {
+    "file": "examples.png",
+    "url": "https://pactown.com/examples",
+    "observedAt": "2026-10-13T17:56:32.696155+00:00",
+    "viewport": {
+      "width": 1280,
+      "height": 850
+    },
+    "authenticated": false,
+    "status": 200,
+    "title": "Pactown — Make documentation executable",
+    "finalUrl": "https://pactown.com/examples/api-tasks#lang=en",
+    "sha256": "01cc086424287b5303fec9f73e6b262c01e97d294a6bee1c3c655cb72630db61",
+    "deliveredFile": "docs/media/pactown-public-example.png"
+  }
+}

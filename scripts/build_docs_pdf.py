@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import html
 import json
 import os
 from pathlib import Path
@@ -17,8 +18,10 @@ from urllib.parse import quote, unquote, urlsplit
 from pypdf import PdfReader, PdfWriter
 
 
-def build(root: Path, output: Path | None, revision: str | None) -> Path:
-    config = json.loads((root / "docs/pdf-config.json").read_text(encoding="utf-8"))
+def build(root: Path, output: Path | None, revision: str | None,
+          config_path: Path | None = None) -> Path:
+    config_path = config_path or root / "docs/pdf-config.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
     document_path = root / config["source"]
     raw = document_path.read_text(encoding="utf-8")
     if not raw.startswith("---\n"):
@@ -71,12 +74,19 @@ def build(root: Path, output: Path | None, revision: str | None) -> Path:
     # The Markdown title remains visible in source; the PDF has its own cover.
     if ast["blocks"] and ast["blocks"][0].get("t") == "Header":
         ast["blocks"].pop(0)
+    if config.get("recipient_lines"):
+        recipient = '<div class="recipient">' + ''.join(
+            '<p>' + html.escape(line) + '</p>' for line in config["recipient_lines"]) + '</div>'
+        ast["blocks"].insert(0, {"t": "RawBlock", "c": ["html", recipient]})
+    stylesheet = (root / config.get("css", "docs/media/print.css")).resolve()
+    stylesheet.relative_to(root)
+    toc_args = ["--toc", "--toc-depth=2"] if config.get("toc", True) else []
     with tempfile.TemporaryDirectory(prefix=".docs-pdf-", dir=output.parent) as temp:
         work = Path(temp)
         html = work / "document.html"
         subprocess.run(["pandoc", "--from=json", "--to=html5", "--standalone", "--mathml",
-                        "--embed-resources", "--fail-if-warnings", "--toc", "--toc-depth=2",
-                        "--css=" + str(root / "docs/media/print.css"),
+                        "--embed-resources", "--fail-if-warnings", *toc_args,
+                        "--css=" + str(stylesheet),
                         "--metadata=title:" + config["title"],
                         "--metadata=subtitle:" + config["subtitle"],
                         "--metadata=author:" + config["author"],
@@ -108,5 +118,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", nargs="?", type=Path)
     parser.add_argument("--revision", default=os.environ.get("DOCS_GIT_REF"))
+    parser.add_argument("--config", type=Path, help="Alternative document/PDF configuration")
     args = parser.parse_args()
-    build(Path(__file__).resolve().parents[1], args.output, args.revision)
+    build(Path(__file__).resolve().parents[1], args.output, args.revision, args.config)
