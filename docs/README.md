@@ -13,3 +13,5 @@
 ## Prezentacja projektu dla uczelni
 
 [Zbiorczy opis Pactown dla Collegium Medicum UKSW](information/pactown-uksw-pl.md) · [PDF](../reports/pactown-collegium-medicum-uksw.pdf)
+
+Odtworzenie prezentacji uczelnianej: `bash scripts/build_uksw_pdf.sh` (te same zależności PDF co dokumentacja techniczna).
