@@ -7,8 +7,8 @@ steps:
   - {id: verification, status: done, task: Testy podsystemów i rzeczywiste obserwacje}
   - {id: corrections, status: done, task: Poprawki wykrytych błędów}
   - {id: source, status: done, task: Dokument Markdown oraz diagramy i pochodzenie zrzutów}
-  - {id: pdf, status: pending, task: Generacja PDF i kontrola układu oraz odnośników}
-  - {id: delivery, status: pending, task: Dostarczenie plików bez nadpisania pracy użytkownika}
+  - {id: pdf, status: done, task: Generacja PDF i kontrola układu oraz odnośników}
+  - {id: delivery, status: done, task: Dostarczenie plików bez nadpisania pracy użytkownika}
 publication:
   authority: none
   protected_profile_present: false
