@@ -1,0 +1,21 @@
+{
+  "observedAt": "2026-10-13T18:03:05.426354+00:00",
+  "kind": "live-local-orchestration",
+  "sourceRevision": "67fae10",
+  "results": [
+    {
+      "service": "api",
+      "status": 200,
+      "allocatedPort": 58921,
+      "dependencyUrlVerified": false
+    },
+    {
+      "service": "web",
+      "status": 200,
+      "allocatedPort": 50999,
+      "dependencyUrlVerified": true
+    }
+  ],
+  "status": "passed",
+  "processesStopped": true
+}

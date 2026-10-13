@@ -1,0 +1,28 @@
+/* Standalone print layout for the Pactown documentation. */
+@page { size: A4; margin: 19mm 17mm 20mm; @bottom-right { content: counter(page); font: 9pt "Liberation Sans", sans-serif; color: #42647b; } }
+@page:first { @bottom-right { content: none; } }
+body { color: #142c3d; font: 11pt/1.42 "Liberation Sans", "DejaVu Sans", sans-serif; margin: 0; }
+header#title-block-header { padding-top: 48mm; min-height: 175mm; border-top: 5mm solid #0983b6; break-after: page; }
+header .title { font-size: 34pt; font-weight: 700; letter-spacing: -.6px; line-height: 1.1; margin-bottom: 12mm; }
+header .subtitle { color: #356780; font-size: 17pt; margin-bottom: 30mm; }
+header .author, header .date { font-size: 11pt; color: #42647b; }
+#TOC { break-after: page; font-size: 9.5pt; padding-bottom: 6mm; }
+#TOC ul { list-style-type: none; padding-left: 4mm; }
+#TOC li { margin: 1.3mm 0; }
+h2 { break-before: page; border-top: .8mm solid #0983b6; padding-top: 5mm; margin: 0 0 7mm; font-size: 20pt; }
+h3 { color: #006488; font-size: 13pt; margin: 7mm 0 3mm; }
+h1, h2, h3 { break-after: avoid; }
+p, li { orphans: 3; widows: 3; }
+a { color: #006488; text-decoration: none; }
+pre { background-color: #edf6fa; border-left: 1mm solid #6eb4d1; padding: 3mm 4mm; line-height: 1.35; white-space: pre-wrap; break-inside: avoid; }
+code { font-family: "Liberation Mono", "DejaVu Sans Mono", monospace; font-size: 8.7pt; }
+table { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 4mm 0 6mm; }
+th { background-color: #e2f0f6; font-weight: 700; }
+td, th { border-bottom: .2mm solid #b4cedb; padding: 2mm; text-align: left; vertical-align: top; }
+tr { break-inside: avoid; }
+figure { text-align: center; margin: 5mm 0 7mm; break-inside: avoid; }
+figure img { max-width: 100%; max-height: 112mm; object-fit: contain; }
+figcaption { margin-top: 2mm; text-align: left; color: #42647b; font-size: 9pt; }
+math[display="block"] { margin: 5mm 0; font-size: 11pt; break-inside: avoid; }
+blockquote { border-left: 1mm solid #6eb4d1; margin-left: 0; padding-left: 4mm; }
+p, td, th, li { overflow-wrap: anywhere; }

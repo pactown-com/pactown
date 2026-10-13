@@ -1,0 +1,5 @@
+Dry run: documentation-demo
+
+Would start services in order:
+  1. api:18101
+  2. web:18102 (deps: api)
