@@ -6,5 +6,5 @@ steps:
   - {id: scope, status: done, task: Jeden projekt i korzyści dla odbiorców uczelnianych}
   - {id: sources, status: done, task: Weryfikacja danych odbiorcy i dotychczasowych dowodów}
   - {id: content, status: done, task: Przykłady zastosowań oraz propozycja pilotażu}
-  - {id: pdf, status: pending, task: Generacja i sprawdzenie zbiorczego PDF}
-  - {id: delivery, status: pending, task: Dostarczenie jednego pliku gotowego do wysłania}
+  - {id: pdf, status: done, task: Generacja i sprawdzenie zbiorczego PDF}
+  - {id: delivery, status: done, task: Dostarczenie jednego pliku gotowego do wysłania}
