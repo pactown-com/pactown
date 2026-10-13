@@ -214,8 +214,7 @@ proponowane zastosowania oraz korzyści są scenariuszami do sprawdzenia w pilot
 
 Najlepszym pierwszym krokiem może być **mały pilotaż w jednej grupie zajęciowej
 lub jednym zespole badawczym**, z kilkoma dobrze określonymi zadaniami.
-Poniższy układ czterech tygodni jest propozycją organizacji, nie deklaracją
-uzgodnionego harmonogramu UKSW.
+Poniższe cztery tygodnie to proponowany przebieg, wymagający uzgodnienia z uczelnią.
 
 | Etap | Działanie | Rezultat |
 |---|---|---|
@@ -231,8 +230,7 @@ liczbę zadań wykonanych samodzielnie przez uczestników i ilość potrzebnego
 wsparcia. Równie ważne są: możliwość ponownego uruchomienia projektu, wykorzystanie
 szablonu przez inną osobę i ocena przydatności przez prowadzącego.
 
-Takie pomiary pozwolą ocenić korzyści dla konkretnej uczelni bez zakładania
-z góry procentowych oszczędności czy określonego wzrostu efektów kształcenia.
+Korzyści i oszczędności można wtedy ocenić na podstawie wyników pilotażu.
 
 > Pactown daje uczelni możliwość zaczynania od małych, działających rozwiązań.
 > Wiedza i pomysł studenta lub pracownika mogą szybciej stać się narzędziem,
@@ -244,6 +242,3 @@ z góry procentowych oszczędności czy określonego wzrostu efektów kształcen
 - [Projekt Pactown — biblioteka i narzędzia wykonawcze](https://github.com/pactown-com/pactown).
 - [Dokumentacja techniczna rozwiązania](solution-pl.md) — materiał pomocniczy dla zespołu wdrożeniowego.
 - [Podstawa weryfikacji tego opracowania](../../reports/uksw-presentation-evidence.json).
-- [Wydział Medyczny. Collegium Medicum UKSW](https://wmcm.uksw.edu.pl/) oraz [UKSW](https://www.uksw.edu.pl/).
-
-**Tomasz Sapletta i Bartłomiej Michalak — autorzy projektu Pactown.**
