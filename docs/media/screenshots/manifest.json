@@ -1,0 +1,36 @@
+{
+  "observedAt": "2026-10-13T18:16:46.673718+00:00",
+  "screenshots": [
+    {
+      "file": "cli-help.png",
+      "kind": "rendered-cli-output",
+      "command": "pactown --help",
+      "textFile": "cli-help.txt",
+      "textSha256": "2dd19d1bbcfa0c014990d95715806f3b4fa9ad65f1b6e5fa85ee39f54f59f027",
+      "sha256": "320ecfd5927c187214a5c42a2336cafbe4a0307c78bd4b500597d79ab0f4a66f"
+    },
+    {
+      "file": "cli-graph.png",
+      "kind": "rendered-cli-output",
+      "command": "pactown graph examples/documentation-demo/pactown.yaml",
+      "textFile": "cli-graph.txt",
+      "textSha256": "b2089c9af23004ff55238d2324d25b8ab3f496e2ffe352882cc32cce4caa9745",
+      "sha256": "81394350e0d57ccd2cce799b832547758b2dbbbeb61e9e4a0a6f3e13f9f0897d"
+    },
+    {
+      "file": "cli-dry-run.png",
+      "kind": "rendered-cli-output",
+      "command": "pactown up --dry-run examples/documentation-demo/pactown.yaml",
+      "textFile": "cli-dry-run.txt",
+      "textSha256": "bf3d1055f4858ec06e76228fa0e57e109e9ad91fc054a952b37fa9a5d4d0a394",
+      "sha256": "22a83e502163730e73ef471cfc8bb8d05f466c072c7b2aa3c87e4ae53c638ef2"
+    },
+    {
+      "file": "runner-api.png",
+      "kind": "live-local-runner-api",
+      "status": 200,
+      "path": "/docs",
+      "sha256": "0ddec3f3ffd614ae527e621f25471e2a16e7ee53361c85899f8ad5110e8d399a"
+    }
+  ]
+}

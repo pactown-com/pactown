@@ -1,6 +1,11 @@
 """Event types and records."""
 from dataclasses import dataclass, field
-from datetime import datetime, UTC
+from datetime import datetime, timezone
+
+try:
+    from datetime import UTC
+except ImportError:
+    UTC = timezone.utc
 from enum import Enum
 from typing import Any, Dict
 import uuid

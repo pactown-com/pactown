@@ -1,0 +1,8 @@
+{
+  "repository": "pactown-com/pactown",
+  "source": "docs/information/solution-pl.md",
+  "output": "reports/pactown-dokumentacja.pdf",
+  "title": "Pactown — dokumentacja rozwiązania",
+  "subtitle": "Biblioteka i CLI do orkiestracji usług z Markdown",
+  "author": "Dokumentacja projektu Pactown"
+}

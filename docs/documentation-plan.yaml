@@ -1,0 +1,15 @@
+schema: pactown/documentation-plan/v1
+planfile_ticket: PLF-001
+name: Dokumentacja rozwiązania PL i PDF
+steps:
+  - {id: audit, status: done, task: Audyt źródeł i istniejących opisów}
+  - {id: isolation, status: done, task: Zachowanie lokalnych zmian i praca w osobnym worktree}
+  - {id: verification, status: done, task: Testy podsystemów i rzeczywiste obserwacje}
+  - {id: corrections, status: done, task: Poprawki wykrytych błędów}
+  - {id: source, status: done, task: Dokument Markdown oraz diagramy i pochodzenie zrzutów}
+  - {id: pdf, status: done, task: Generacja PDF i kontrola układu oraz odnośników}
+  - {id: delivery, status: done, task: Dostarczenie plików bez nadpisania pracy użytkownika}
+publication:
+  authority: none
+  protected_profile_present: false
+  automatic_merge_claimed: false

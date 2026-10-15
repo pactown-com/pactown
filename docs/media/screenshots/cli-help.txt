@@ -1,0 +1,26 @@
+Usage: pactown [OPTIONS] COMMAND [ARGS]...
+
+  Pactown – Decentralized Service Ecosystem Orchestrator.
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  build     Build a desktop or mobile app from a markpact README.
+  deploy    Generate deployment files (Docker Compose, Kubernetes).
+  down      Stop all services in the ecosystem.
+  exec      Run a markpact README as a one-shot job (alias for run --once).
+  generate  Generate pactown config from a folder of README.md files.
+  graph     Show dependency graph.
+  init      Initialize a new pactown ecosystem configuration.
+  llm       LLM provider management with rotation and fallback.
+  publish   Publish all modules to registry.
+  pull      Pull dependencies from registry.
+  quadlet   Podman Quadlet deployment commands for VPS production.
+  run       Run a single markpact README as a service or one-shot job.
+  scan      Scan a folder and show detected services.
+  status    Show status of all services.
+  targets   List available target platforms and frameworks.
+  up        Start all services in the ecosystem.
+  validate  Validate ecosystem configuration.

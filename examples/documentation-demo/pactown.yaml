@@ -1,0 +1,14 @@
+name: documentation-demo
+version: "1.0.0"
+sandbox_root: .pactown-doc-demo
+services:
+  api:
+    readme: api/README.md
+    port: 18101
+    health_check: /health
+  web:
+    readme: web/README.md
+    port: 18102
+    health_check: /health
+    depends_on:
+      - api

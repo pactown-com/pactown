@@ -17,6 +17,12 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-markdown%20only-brightgreen)](https://github.com/wronai/pactown)
 
 
+## Dokumentacja rozwiązania (PL)
+
+- [Opis, architektura, zrzuty i wyniki weryfikacji](docs/information/solution-pl.md).
+- [PDF do udostępnienia](reports/pactown-dokumentacja.pdf).
+- Odtworzenie PDF: `bash scripts/build_docs_pdf.sh`; wymagania opisano w dokumencie.
+
 ## AI Cost Tracking
 
 ![PyPI](https://img.shields.io/badge/pypi-costs-blue) ![Version](https://img.shields.io/badge/version-0.1.173-blue) ![Python](https://img.shields.io/badge/python-3.9+-blue) ![License](https://img.shields.io/badge/license-Apache--2.0-green)

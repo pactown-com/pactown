@@ -12,6 +12,7 @@ load_dotenv(override=False)
 
 from rich.console import Console
 from rich.panel import Panel
+from rich.text import Text
 
 from . import __version__
 from .config import load_config
@@ -236,7 +237,7 @@ def graph(config_path: str):
     try:
         config = load_config(config_path)
         resolver = DependencyResolver(config)
-        console.print(Panel(resolver.print_graph(), title="Dependency Graph"))
+        console.print(Panel(Text(resolver.print_graph()), title="Dependency Graph"))
     except Exception as e:
         console.print(f"[red]Error: {e}[/red]")
         sys.exit(1)
