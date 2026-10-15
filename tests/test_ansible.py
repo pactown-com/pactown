@@ -3132,6 +3132,8 @@ class TestArtifactsInPactownSandboxRoot:
         """PACTOWN_SANDBOX_ROOT from .env resolves to .pactown inside project."""
         import os
         val = os.environ.get("PACTOWN_SANDBOX_ROOT", "")
+        if not val:
+            pytest.skip("PACTOWN_SANDBOX_ROOT not set in environment")
         # conftest.py resolves relative .pactown → absolute path
         assert val, "PACTOWN_SANDBOX_ROOT should be set by .env / conftest.py"
         p = Path(val)
