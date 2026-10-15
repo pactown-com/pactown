@@ -1,5 +1,10 @@
 """CQRS query handlers."""
-from datetime import datetime, UTC
+from datetime import datetime, timezone
+
+try:
+    from datetime import UTC
+except ImportError:
+    UTC = timezone.utc
 from typing import Any, Dict, List, Optional
 
 from ..nfo_config import logged
