@@ -80,7 +80,7 @@ select = ["E", "F", "W", "I"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-p anyio -p pytest_asyncio.plugin -p no:pytest_aiohttp -p no:aiohttp.pytest_plugin"
+addopts = "-p anyio -p no:pytest_aiohttp -p no:aiohttp.pytest_plugin"
 
 [tool.pfix]
 # Self-healing Python configuration
