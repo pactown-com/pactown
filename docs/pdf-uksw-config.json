@@ -1,0 +1,16 @@
+{
+  "repository": "pactown-com/pactown",
+  "source": "docs/information/pactown-uksw-pl.md",
+  "output": "reports/pactown-collegium-medicum-uksw.pdf",
+  "title": "Pactown — od pomysłu do działającej usługi",
+  "subtitle": "Propozycja zastosowania w dydaktyce, badaniach i pracy uczelni",
+  "author": "Tomasz Sapletta; Bartłomiej Michalak",
+  "toc": false,
+  "css": "docs/media/uksw-print.css",
+  "recipient_lines": [
+    "Dla Wydziału Medycznego. Collegium Medicum",
+    "Uniwersytet Kardynała Stefana Wyszyńskiego w Warszawie",
+    "ul. Wóycickiego 1/3, 01-938 Warszawa",
+    "www.uksw.edu.pl"
+  ]
+}
